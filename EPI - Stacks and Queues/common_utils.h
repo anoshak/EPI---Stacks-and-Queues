@@ -9,7 +9,7 @@
 #define COMMON_UTILS_H_
 
 #include <iostream>
-#include <string.h>
+#include <string>
 #include <vector>
 #include<algorithm>
 #include<map>
@@ -26,6 +26,7 @@ using namespace std;
 void print_vector(vector<int>& arr);
 void print_vector_matrix(vector<vector<int> >& arr);
 void swap (vector<int>& arr, int i, int j);
+int stoi(string s);
 
 struct ListNode
 {

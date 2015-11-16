@@ -31,3 +31,23 @@ void swap (vector<int>& arr, int i, int j)
 	arr[j] = temp;
 }
 
+int stoi(string s)
+{
+	if(s.size()==0)
+		return 0;
+	int i=0,answer=0;
+	bool neg = false;
+	if(s[i] == '-')
+	{
+		neg = true;
+		i++;
+	}
+	for(;i<s.size();i++)
+	{
+		answer = answer*10 + (s[i]-'0');
+	}
+	if(neg)
+		return answer*-1;
+	else return answer;
+}
+
